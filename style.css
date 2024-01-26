@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(165, 164, 110);
+}
+
+header{
+    background-color: rgba(200, 195, 205, 0.142);
+    overflow: hidden;
+    height: 250px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 10px;
+}
+h2{
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav{
+    background-color: rgb(4, 82, 82);
+    width: 100%;
+    padding: 15px;
+    
+}
+a{
+    text-decoration: none;
+}
+
+.navlinks {
+    text-align: center; 
+}
+
+.navlinks li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+ul li a {
+    font-size: 20px;
+    color: aliceblue;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.navlinks li:hover{
+    background: blue;
+    border-radius: 10px;
+}
+
+.container{
+    background: url(/jus.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    margin: 5px;
+    
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 238, 255);
+    padding: 10px;
+    background: rgba(1, 1, 27, 0.171);
+    font-size: 25px;
+}
+h3{
+    text-align: center;
+}
+.about{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+.section{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(207, 207, 70, 0.427);
+  
+}
+
+article img {
+    width: 90px;
+}
+article h4{
+    text-transform: uppercase;
+    font-size: 21px;
+    color: blue;
+}
+article h4, article p {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    
+    font-size: 18px;
+}
+button{
+    text-align: center;
+    position: relative;
+}
+.button{
+    
+  border: none;
+    padding: 10px;
+    outline: none;
+    
+}
+footer{
+    position: static;
+    background: rgb(7, 2, 7);
+    display: flex;
+    justify-content: space-between;
+}
+.footimg{
+    float: left;
+    padding: 10px;
+   
+
+}
+
+
+footer .text {
+    text-align: right;
+    font-size: 19px;
+    padding: 10px;
+    width: 30%;
+    margin-top: 60px;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: lightgrey; 
+    }
+
+    header {
+        height: 250px; 
+    }
+
+    .navlinks {
+        display: block;
+        text-align: center;
+    }
+
+    .navlinks li {
+        display: block;
+        padding: 10px;
+    }
+    .container {
+        height: 40vh; 
+    }
+
+    .content {
+        font-size: 18px; 
+    }
+
+    .section {
+        flex-direction: column; 
+    }
+
+    article h4, article p {
+        max-width: 100%;
+    }
+
+    button {
+        margin: 10px auto; 
+    }
+
+    footer {
+        flex-direction: column; 
+    }
+
+    .text {
+        width: 100%; 
+        text-align: center;
+        margin-top: 10px;
+    }
+}
